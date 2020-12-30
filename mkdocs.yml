@@ -1,0 +1,56 @@
+site_name: 'Моделирование выбора заказов и объемов производства'
+site_description: 'Алгоритмы линейного программирования для отбора заказов и планирования производства для четырех продуктов на основе гидроксида алюминия.'
+site_author: 'E Pogrebnyak'
+docs_dir: docs/
+site_dir: site/
+
+repo_name: 'epogrebnyak/aloh'
+repo_url: 'https://github.com/epogrebnyak/aloh'
+edit_uri: 'edit/main/docs/'
+
+copyright: Copyright &copy; 2020 Евгений Погребняк
+
+nav:
+    - 'Начало': 
+       - Краткое описание: index.md
+       - Ссылки: links.md
+
+    - 'Модель':
+       - 'Производство': production.md
+       - 'Заказы': orders.md
+       - 'Задача ЛП': linprog.md
+       - 'Формулы': formulas.md
+       - 'Formulas': formulas.en.md
+       - 'Допущения': assumptions.md
+       
+    - 'Примеры':
+       - 'Пример 0': example0.md
+       - 'Пример 1': example1.md
+       - 'Пример 2': example2.md
+
+    - 'Реализация':
+      - 'Текущий этап': current.md
+      - 'Скорость работы': perf.md
+      - 'Интеграция': embedding.md
+      - 'План развития': roadmap.md
+
+theme:
+  lang: 'ru'
+  name: 'material'
+  palette:
+    primary: blue
+  features:
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences    
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js      
